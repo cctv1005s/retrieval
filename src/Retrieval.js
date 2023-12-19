@@ -65,7 +65,7 @@ module.exports = (function() {
 
 
 		// STEP 2: Retrieve the 10 highest scoring document indices.
-		let topNIndices = topIndices(docScores).slice(0, N);
+		let topNIndices = topIndices(docScores, N).slice(0, N);
 
 
 		// STEP 3: Retrieve the documents best matching the query.
